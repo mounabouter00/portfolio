@@ -1,1 +1,87 @@
 @import "tailwindcss";
+
+body {
+  cursor: none;
+}
+
+@theme {
+  --color-primary: #e0b6ff;
+  --color-secondary: #c7fff0;
+  --color-secondary-fixed: #26fedc;
+  --color-background: #0b0b0f;
+  --color-surface: #131317;
+  --color-surface-container-lowest: #0e0e12;
+  --color-on-surface: #e4e1e7;
+  --color-on-surface-variant: #d0c2d5;
+  --color-error: #ffb4ab;
+  --font-display: "Press Start 2P", monospace;
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+@keyframes neon-pulse {
+  0%,
+  100% {
+    text-shadow:
+      0 0 10px #e0b6ff,
+      0 0 20px #e0b6ff,
+      0 0 30px #9d4edd;
+  }
+  50% {
+    text-shadow:
+      0 0 20px #e0b6ff,
+      0 0 35px #e0b6ff,
+      0 0 50px #9d4edd;
+  }
+}
+
+@keyframes glitch {
+  0%,
+  95%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  96% {
+    transform: translate(-2px, 1px);
+    opacity: 0.8;
+  }
+  97% {
+    transform: translate(2px, -1px);
+    opacity: 1;
+  }
+  98% {
+    transform: translate(-1px, 0);
+    opacity: 0.9;
+  }
+}
+
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes scan {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+.title-dynamic {
+  background: linear-gradient(90deg, #e0b6ff, #c7fff0, #9d4edd, #e0b6ff);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation:
+    gradient-shift 4s ease infinite,
+    glitch 4s infinite;
+}

@@ -1,0 +1,58 @@
+export const skills = [
+  {
+    name: "React",
+    icon: "deployed_code",
+    level: 85,
+    color: "primary",
+    detail: "Composants, hooks, state management",
+  },
+  {
+    name: "Python",
+    icon: "code_blocks",
+    level: 80,
+    color: "secondary",
+    detail: "Scripts, automatisation, data",
+  },
+  {
+    name: "FastAPI",
+    icon: "bolt",
+    level: 60,
+    color: "primary",
+    detail: "APIs REST, async, validation",
+  },
+  {
+    name: "JavaScript",
+    icon: "javascript",
+    level: 80,
+    color: "secondary",
+    detail: "ES6+, DOM, logique async",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "palette",
+    level: 80,
+    color: "primary",
+    detail: "Design system, responsive",
+  },
+  {
+    name: "Git / GitHub",
+    icon: "merge",
+    level: 80,
+    color: "secondary",
+    detail: "Versioning, collaboration",
+  },
+  {
+    name: "SQL",
+    icon: "database",
+    level: 90,
+    color: "primary",
+    detail: "Requêtes, modélisation",
+  },
+  {
+    name: "Docker",
+    icon: "package_2",
+    level: 30,
+    color: "secondary",
+    detail: "Conteneurisation, en apprentissage",
+  },
+]

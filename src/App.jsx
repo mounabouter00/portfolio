@@ -1,18 +1,22 @@
-
-import './App.css'
-
-import { motion } from "motion/react"
+import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
+import About from "./components/About"
+import Skills from "./components/Skills"
+import Projects from "./components/Projects"
+import Contact from "./components/Contact"
+import CustomCursor from "./components/CustomCursor"
 
 function App() {
   return (
-    <motion.h1
-      className="text-4xl font-bold text-purple-400"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      Framer Motion fonctionne !
-    </motion.h1>
+    <div className="bg-background min-h-screen">
+      <CustomCursor />
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+    </div>
   )
 }
 
